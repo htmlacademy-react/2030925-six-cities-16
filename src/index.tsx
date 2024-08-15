@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './components/app/app';
-import { Cards } from './mock/cards';
+import { Cards } from './mocks/cards';
 import { AuthorizationStatus } from './const';
 
 const root = ReactDOM.createRoot(
@@ -12,7 +12,7 @@ root.render(
   <React.StrictMode>
     <App
       placesCount={Cards.length}
-      authorizationStatus={AuthorizationStatus.NoAuth}
+      authorizationStatus={AuthorizationStatus.Auth}
     />
   </React.StrictMode>
 );

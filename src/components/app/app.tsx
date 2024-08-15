@@ -8,7 +8,7 @@ import ErrorPage from '../../pages/error-page';
 import PrivateRoute from '../private-route/private-route';
 
 type AppProps = {
-    placesCount: number;
+  placesCount: number;
     authorizationStatus: AuthorizationStatus;
 }
 
@@ -34,7 +34,7 @@ export default function App({placesCount, authorizationStatus}: AppProps): JSX.E
         />
         <Route
           path={`${AppRoute.Offer}/:id`}
-          element={<OfferPage/>}
+          element={<OfferPage authorizationStatus={authorizationStatus}/>}
         />
         <Route
           path={AppRoute.Error}
